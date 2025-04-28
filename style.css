@@ -1,0 +1,13 @@
+.bg-blue-navy {
+    background-color: #000925;
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; 
+}
