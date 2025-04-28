@@ -59,75 +59,50 @@
 
         <div class="w-3/4">
            
-<div class="relative w-full">
-    <img class="w-full h-screen" src="images/home.png" alt="Espace de travail">
-    <div class="absolute inset-0 flex justify-center flex-col font-lora ml-20">
-        <div class="text-blue-navy text-5xl font-bold italic">Passionnée de créativité</div>
-        <div id="typingText" class="text-blue-navy text-4xl uppercase typing-animation overflow-hidden whitespace-nowrap"></div>
-    </div>
-</div>
+            <div class="flex justify-center items-center w-full h-screen">
+                <div class="relative w-[400px] h-auto bg-blue-navy m-8 p-8 rounded-lg shadow-lg">
+                    
+                    <h1 class="text-white uppercase font-bold text-center text-2xl mb-6">Contactez-moi !</h1>
+            
+                    <div class="flex flex-col items-center space-y-6 text-white">
+                        <!-- Téléphone -->
+                        <div class="flex items-center space-x-4">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                            <div>0696 30 44 73</div>
+                        </div>
+            
+                        <!-- Email -->
+                        <div class="flex items-center space-x-4">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                            <a href="mailto:oceanepy7@gmail.com">oceanepy7@gmail.com</a>
+                        </div>
+            
+                        <!-- Localisation -->
+                        <div class="flex items-center space-x-4">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                            <div>Ducos, Martinique</div>
+                        </div>
+            
+                        <!-- Réseaux sociaux -->
+                        <div class="flex items-center space-x-4">
+                            <a href="https://www.linkedin.com/in/océane-py-3b3152196" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="https://github.com/oceanedev7" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-square-github text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
 
         </div>
     </div>
 
 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-        const texts = ["Développement web", "Marketing/communication"];
-let currentTextIndex = 0;
-let typingTextElement = document.getElementById("typingText");
-
-function typeText(text, callback) {
-    let i = 0;
-    typingTextElement.textContent = ''; 
-    const typingInterval = setInterval(() => {
-        typingTextElement.textContent += text.charAt(i);
-        i++;
-        if (i === text.length) {
-            clearInterval(typingInterval);
-            setTimeout(() => {
-                callback(); 
-            }, 500); 
-        }
-    }, 100); 
-}
-
-function eraseText(callback) {
-    let i = typingTextElement.textContent.length;
-    const erasingInterval = setInterval(() => {
-        typingTextElement.textContent = typingTextElement.textContent.slice(0, i - 1);
-        i--;
-        if (i === 0) {
-            clearInterval(erasingInterval);
-            setTimeout(() => {
-                callback(); 
-            }, 300);
-        }
-    }, 100); 
-}
-
-function startTypingEffect() {
-    typeText(texts[currentTextIndex], () => {
-        setTimeout(() => {
-            eraseText(() => {
-                currentTextIndex = (currentTextIndex + 1) % texts.length; 
-                startTypingEffect(); 
-            });
-        }, 1000); 
-    });
-}
-
-startTypingEffect();
-
-
-
-     </script>
 </body>
 </html>
