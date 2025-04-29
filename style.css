@@ -28,3 +28,17 @@
     border-color: #000925;
 }
 
+.typing-animation {
+    display: block;
+  }
+  
+  /* Désactiver l'animation typing pour les petits écrans */
+  @media (max-width: 767px) {
+    .typing-animation {
+      display: none;  /* Cache l'élément sur les écrans de téléphone */
+    }
+  
+    .text-blue-navy.text-4xl {
+      font-size: 2rem; /* Adapte la taille du texte pour les petits écrans */
+    }
+  }
