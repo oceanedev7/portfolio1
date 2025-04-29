@@ -2,6 +2,10 @@
     background-color: #000925;
 }
 
+.bg-blue-grey {
+    background-color: #5166a3;
+}
+
 .scroll-container {
     overflow-y: scroll;
     scrollbar-width: none; 
@@ -23,3 +27,4 @@
 #animation-carousel {
     border-color: #000925;
 }
+
