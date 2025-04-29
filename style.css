@@ -11,3 +11,15 @@
 .scroll-container::-webkit-scrollbar {
     display: none; 
 }
+
+.text-blue-navy {
+    color: #000925;
+}
+
+.text-blue-grey {
+    color: #5166a3;
+}
+
+#animation-carousel {
+    border-color: #000925;
+}
