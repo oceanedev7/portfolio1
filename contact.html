@@ -14,69 +14,24 @@
 </head>
 <body>
     
-    <div class="flex flex-row w-full">
-        <!-- <div class="h-screen bg-blue-navy w-1/4 flex flex-col items-center justify-center space-y-12"> 
-            <div> 
-                <img class="w-40 h-40 bg-white rounded-full" src="images/profil.jpg" alt="Photo de profil"> 
-            </div>
-
-
-            <div class="text-white text-xl font-bold space-y-12">
-                <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
-                    <div class="w-6 flex justify-center">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-                    <a href="index.html"> Accueil </a>
-                </div>
-            
-                <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
-                    <div class="w-6 flex justify-center">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <a href="parcours.html"> Mon parcours </a>
-                </div>
-            
-                <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
-                    <div class="w-6 flex justify-center">
-                        <i class="fa-solid fa-file-code"></i>
-                    </div>
-                    <a href="projets.html"> Mes projets web </a>
-                </div>
-
-            
-                <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
-                    <div class="w-6 flex justify-center">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <a href="contact.html"> Contact </a>
-                </div>
-            </div>
-            
-
-
-        </div> -->
-
-        <div class="md:hidden w-full md:bg-blue-navy p-4">
-            <!-- En-tête mobile avec hamburger à droite -->
-            <div class="flex justify-between items-center">
-                <button id="menu-toggle" class=" bg-blue-navy text-white text-2xl">
-                    <i class="fa-solid fa-bars"></i>
+    <div class="flex flex-col md:flex-row w-full min-h-screen">
+       
+        <div class="md:hidden p-4">
+            <div class=" flex relative flex justify-end items-center">
+                <div></div> 
+                <button id="menu-toggle" class="text-white text-2xl">
+                    <i class="bg-blue-grey p-2 px-3 fa-solid fa-bars rounded-lg"></i>
                 </button>
             </div>
-        
-            <!-- Menu déroulant caché au départ -->
-            <div id="mobile-menu" class="hidden mt-4 space-y-4 text-white">
-                <div class="flex justify-center">
-                    <img class="w-24 h-24 bg-white rounded-full" src="images/profil.jpg" alt="Photo de profil">
-                </div>
-                <a href="index.html" class="block text-center hover:text-gray-200">Accueil</a>
-                <a href="parcours.html" class="block text-center hover:text-gray-200">Mon parcours</a>
-                <a href="projets.html" class="block text-center hover:text-gray-200">Mes projets web</a>
-                <a href="contact.html" class="block text-center hover:text-gray-200">Contact</a>
+            <div id="mobile-menu" class="absolute z-10 right-0 bg-blue-grey hidden mt-4 text-white text-center rounded-lg p-4 w-44 shadow-lg divide-y divide-white">
+                <a href="index.html" class="block py-2 pt-0 hover:text-gray-200">Accueil</a>
+                <a href="parcours.html" class="block py-2 hover:text-gray-200">Mon parcours</a>
+                <a href="projets.html" class="block py-2 hover:text-gray-200">Mes projets web</a>
+                <a href="contact.html" class="block py-2 pb-0 hover:text-gray-200">Contact</a>
             </div>
         </div>
-        
-        <!-- Sidebar visible uniquement à partir de md -->
+    
+    
         <div class="hidden md:flex h-screen bg-blue-navy w-1/4 flex-col items-center justify-center space-y-12">
             <div>
                 <img class="w-40 h-40 bg-white rounded-full" src="images/profil.jpg" alt="Photo de profil">
@@ -109,54 +64,46 @@
                 </div>
             </div>
         </div>
-        
-
-        <div class="md:w-3/4 w-full">
-           
-            <div class="flex justify-center items-center w-full h-screen">
-                <div class="relative w-[400px] h-auto bg-blue-navy m-8 p-8 rounded-lg shadow-lg">
-                    
-                    <h1 class="text-white uppercase font-bold text-center text-2xl mb-6">Contactez-moi !</h1>
-            
-                    <div class="flex flex-col items-center space-y-6 text-white">
-                        <!-- Téléphone -->
-                        <div class="flex items-center space-x-4">
-                            <i class="fa-solid fa-phone text-xl"></i>
-                            <div>0696 30 44 73</div>
-                        </div>
-                
-                        <!-- Email -->
-                        <div class="flex items-center space-x-4">
-                            <i class="fa-solid fa-envelope text-xl"></i>
-                            <a href="mailto:oceanepy7@gmail.com">oceanepy7@gmail.com</a>
-                        </div>
-            
-                        <!-- Localisation -->
-                        <div class="flex items-center space-x-4">
-                            <i class="fa-solid fa-location-dot text-xl"></i>
-                            <div>Ducos, Martinique</div>
-                        </div>
-            
-                        <!-- Réseaux sociaux -->
-                        <div class="flex items-center space-x-4">
-                            <a href="https://www.linkedin.com/in/océane-py-3b3152196" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-linkedin text-2xl"></i>
-                            </a>
-                            <a href="https://github.com/oceanedev7" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-square-github text-2xl"></i>
-                            </a>
-                        </div>
+    
+    
+        <div class="flex-1 flex justify-center items-center bg-white">
+            <div class="relative w-[90%] sm:w-[400px] bg-blue-navy m-8 p-8 rounded-lg shadow-lg">
+                <h1 class="text-white uppercase font-bold text-center text-2xl mb-6">Contactez-moi !</h1>
+                <div class="flex flex-col items-center space-y-6 text-white">
+                    <div class="flex items-center space-x-4">
+                        <i class="fa-solid fa-phone text-xl"></i>
+                        <div>0696 30 44 73</div>
                     </div>
-                    
+                    <div class="flex items-center space-x-4">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        <a href="mailto:oceanepy7@gmail.com">oceanepy7@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                        <div>Ducos, Martinique</div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://www.linkedin.com/in/océane-py-3b3152196" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/oceanedev7" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-square-github text-2xl"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            
-
         </div>
     </div>
-
-
+    
 
 </body>
 </html>
+
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
