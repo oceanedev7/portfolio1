@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div class="flex flex-row w-full">
+    <!-- <div class="flex flex-row w-full">
         <div class="h-screen bg-blue-navy w-1/4 flex flex-col items-center justify-center space-y-12"> 
             <div> 
                 <img class="w-40 h-40 bg-white rounded-full" src="images/profil.jpg" alt="Photo de profil"> 
@@ -167,9 +167,179 @@
              </div>
 
         </div>
-    </div>
+    </div> -->
 
+        <div class="flex flex-col w-full md:flex-row md:items-center md:justify-center">
+          
+          <!-- HEADER MOBILE -->
+          <div class="md:hidden p-4">
+            <div class=" flex relative flex justify-end items-center">
+                <div></div> 
+                <button id="menu-toggle" class="text-white text-2xl">
+                    <i class="bg-blue-grey p-2 px-3 fa-solid fa-bars rounded-lg"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="absolute z-10 right-0 bg-blue-grey hidden mt-4 text-white text-center rounded-lg p-4 w-44 shadow-lg divide-y divide-white">
+                <a href="index.html" class="block py-2 pt-0 hover:text-gray-200">Accueil</a>
+                <a href="parcours.html" class="block py-2 hover:text-gray-200">Mon parcours</a>
+                <a href="projets.html" class="block py-2 hover:text-gray-200">Mes projets web</a>
+                <a href="contact.html" class="block py-2 pb-0 hover:text-gray-200">Contact</a>
+            </div>
+        </div>
+      
+          <!-- SIDEBAR DESKTOP -->
+          <div class="hidden md:flex h-screen bg-blue-navy w-1/4 flex-col items-center justify-center space-y-12">
+            <div>
+              <img class="w-40 h-40 bg-white rounded-full" src="images/profil.jpg" alt="Photo de profil">
+            </div>
+      
+            <div class="text-white text-xl font-bold space-y-12">
+              <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
+                <div class="w-6 flex justify-center">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <a href="index.html">Accueil</a>
+              </div>
+              <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
+                <div class="w-6 flex justify-center">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <a href="parcours.html">Mon parcours</a>
+              </div>
+              <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
+                <div class="w-6 flex justify-center">
+                  <i class="fa-solid fa-file-code"></i>
+                </div>
+                <a href="projets.html">Mes projets web</a>
+              </div>
+              <div class="flex flex-row items-center space-x-4 hover:text-gray-200">
+                <div class="w-6 flex justify-center">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- CONTENU PRINCIPAL -->
+          <div class="md:w-3/4 w-full">
+            <div class="w-full h-screen flex justify-center p-12">
+              <div class="overflow-y-auto scroll-container">
+                <h1 class="text-center text-blue-navy uppercase font-black text-4xl mb-10 "> De la culture au web </h1>
+             
+                <div class="flex items-center space-x-2 mb-6">
+                    <h3 class="font-bold text-2xl text-blue-grey">Formations</h3>
+                    <i class="text-xl fa-solid fa-arrow-down mt-1 text-blue-grey"></i>
+                </div>
+                
+                
+                <li> 
+                    <span> 2024 : Formation Développeur Web et Web mobile | IMFPA - Fort-de-France</span>
+                </li>
+                <div class="border-l border-blue-navy h-8 mt-1 ml-0.5"></div>
+                
+                <li> 
+                    <span> 2020-2022 : Master Marketing dans un monde digital | Pôle consulaire de formation - Schoelcher </span>
+                 </li>
+                <div class="border-l border-blue-navy h-8 mt-1 ml-0.5"></div>
+                
+                <li> 2019 - 2020 : Bachelor Responsable des activités touristiques | Maestris Sup - Lille </li>
+                <div class="border-l border-blue-navy h-8 mt-1 ml-0.5"></div>
+                
+                <li class="mb-6"> 2017 - 2019 : BTS Tourisme | Lycée Bellevue - Fort-de-France </li>
+                
+                
+                
+                <div class="flex items-center space-x-2 mb-6">
+                    <h3 class="font-bold text-2xl text-blue-grey">Expériences professionnelles</h3>
+                    <i class="text-xl fa-solid fa-arrow-down mt-1 text-blue-grey"></i>
+                </div>
+                
+                <div class="flex flex-col mb-6">
+                    <li class="font-bold text-lg mb-4 text-blue-navy"> Community Manager/Conseillère en voyages - AVS Voyages (Février - Mai 2025) </li>
+                    <div class="flex flex-col"> 
+                    <div>-Mettre en oeuvre les actions de communication internes et externes</div>
+                    <div>-Élaborer des supports et outils de communication</div>
+                    <div>-Gérer les relations publiques/presse</div>
+                    <div>-Organiser des évènements à destination des clients ou des collaborateurs</div>
+                    <div>-Conseiller et orienter les clients dans le choix de leurs voyages</div>
+                    <div>-Élaborer des devis personnalisés </div>
+                    </div>
+                    </div>
+                
+                <div class="flex flex-col mb-6">
+                <li class="font-bold text-lg mb-4 text-blue-navy"> Développeuse Web - RESEAU L.I.L.A.S (Août - Octobre 2024) </li>
+                <div class="flex flex-col"> 
+                <div>-HTML, Tailwind CSS, Javascript, MySQL, Laravel</div>
+                <div>-Maquetter une interface utilisateur web</div>
+                <div>-Développer la partie dynamique d'une interfaces utilisateur web</div>
+                <div>-Mettre en place une base de données relationnelle</div>
+                <div>-Développer des composants d’accès aux données SQL</div>
+                <div>-Développer des composants métier coté serveur</div>
+                </div>
+                </div>
+                
+                    <div class="flex flex-col mb-6">
+                    <li class="font-bold text-lg mb-4 text-blue-navy"> Community manager - West Indies Barber (2023 - 2024) </li>
+                    <div class="flex flex-col"> 
+                    <div>-Stratégie de communication</div>
+                    <div>-Création et gestion de contenu</div>
+                    <div>-Création de visuels</div>
+                    <div>-Animation de la communauté</div>
+                    <div>-Gestion de la réputation en ligne</div>
+                    <div>-Élaboration de la ligne éditoriale</div>
+                    <div>-Suivi des indicateurs de performance</div>
+                    </div>
+                    </div>
+                
+                    <div class="flex flex-col mb-6">
+                    <li class="font-bold text-lg mb-4 text-blue-navy"> Chargée de communication - Acise insertion et environnement (2020 - 2023) </li>
+                    <div class="flex flex-col"> 
+                    <div>-Définition de la stratégie de communication </div>
+                    <div>-Veille</div>
+                    <div>-Réalisation des supports de communication (dossier et communiqués de presse, newsletters, flyers...)</div>
+                    <div>-Participation à l'organisation d'évènements (grande collecte solidaire, salons...)</div>
+                    <div>-Relation presse (interviews)</div>
+                    <div>-Création de contenu pour les réseaux sociaux (tournage et montage vidéo, réalisation de visuels)</div>
+                    <div>-Administratif (Insertion socio-professionnelle, Service Civique, Rédaction de rapports d'activité)</div>
+                    <div>-Développement le réseau de partenaires (institutionnel, médias/presse)</div>
+                    <div>-Animation de la communauté</div>
+                    <div>-Gestion de la réputation en ligne</div>
+                    <div>-Élaboration de la ligne éditoriale</div>
+                    <div>-Suivi des indicateurs de performance</div>
+                </div>
+                </div>
+                
+                    <div class="flex flex-col">
+                    <li class="font-bold text-lg mb-4 text-blue-navy"> Chargée de communication - Iti Tour (Janvier - Mars 2020) </li>
+                    <div class="flex flex-col"> 
+                    <div>-Définition de la stratégie de communication </div>
+                    <div>-Veille</div>
+                    <div>-Réalisation des supports de communication (dossier et communiqués de presse, newsletters, flyers...)</div>
+                    <div>-Stratégie relation presse</div>
+                    <div>-Création de contenu pour les réseaux sociaux (tournage et montage vidéo, réalisation de visuels)</div>
+                    <div>-Développement le réseau de partenaires (institutionnel, médias/presse)</div>
+                    <div>-Animation de la communauté</div>
+                    <div>-Gestion de la réputation en ligne</div>
+                    <div>-Élaboration de la ligne éditoriale</div>
+                    <div>-Suivi des indicateurs de performance</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+     
+      
 
-
+      <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+    
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
 </body>
 </html>
